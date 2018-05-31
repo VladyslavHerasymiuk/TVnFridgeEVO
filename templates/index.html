@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="utf-8">
+     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+     <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="static/js/script.js"></script>
+ </head>
+ <body>
+     <div class="justify-content-center myselect">
+                <form action="" method="post" class="row justify-content-center">
+                    <select name="changeStatus" id = 'changeStatus' class="form-control input-lg col-3">
+                        <option disabled selected value>select</option>
+                        <option value="1">TV</option>
+                        <option value="2">Fridge</option>
+                    </select>
+               </form>
+     </div>
+     <div class="column">
+         <div class="row justify-content-center">
+            <div id="clickable" class="container col-4"></div>
+
+            <div class="container col-4">
+                <ul id="show" class="list-group"></ul>
+            </div>
+         </div>
+     </div>
+
+
+ </body>
+ </html>
